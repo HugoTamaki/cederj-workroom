@@ -6,6 +6,12 @@
 
     <div class="form-inputs">
       <div class="form-group">
+        <%= f.input :first_name, label: t('account.registration.new.first_name'), :required => true, input_html: {class: 'form-control'} %>
+      </div>
+      <div class="form-group">
+        <%= f.input :last_name, label: t('account.registration.new.last_name'), :required => true, input_html: {class: 'form-control'} %>
+      </div>
+      <div class="form-group">
         <%= f.input :email, label: t('account.registration.edit.email'), :required => true, input_html: {class: 'form-control'} %>
       </div>
       <div class="form-group">
